@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 // import MyPromise from './utils/mypromise';
 import CheckObject from './designmode/objectOrigin';
 import SubClass from './designmode/inherit';
+import Factory from './designmode/safefactory';
 // import './app.css';
 
 const App: React.FC = () => {
@@ -15,7 +16,8 @@ const App: React.FC = () => {
 
         const sub = new SubClass();
         console.log(sub,sub.getMode());
-
+        const fa = new Factory('Java','isJava');
+        console.log(fa);
         // const mypromise = new MyPromise(() => {
         //     throw new Error('error');
         // });
