@@ -9,4 +9,4 @@ node中处理多个异步操作同一个文件的场景（靠队列实现）
 
 node中this指的是[],存在一个global对象 _filename _dirname exports module require这五个变量可以直接使用
 process：进程 { platform, cwd, env, argv, nextTick }
-commender 命令行管家
+commender 命令行管家 
