@@ -161,4 +161,5 @@ class ReadStream extends EventEmitter {
     }
 
 }
+// eslint-disable-next-line no-undef
 module.exports = ReadStream;
