@@ -17,5 +17,5 @@ const data = fs.readFileSync('./redme.md', 'utf-8');
 // 导出结果 每个文件就是一个模块
 // eslint-disable-next-line no-undef
 module.exports = 'hello2';
-exports = 'hello'
-console.log(module)
+exports = 'hello';
+console.log(module);

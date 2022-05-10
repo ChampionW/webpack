@@ -40,3 +40,35 @@ this = exports = mudule.exports = {}
 const exports = module.exports
 const thisValue = exports
 compileFunction.call(thisValue,exports,module,....)
+
+编码 后端需要读取文件，需要用到编码
+前端早期不能操作文件夹的，无法操作二进制数据，node就实现了一个buffer用于描述内存的
+内存，2进制值 Buffer是16进制（目的是为了简洁）
+基本的进制转换  node只支持utf-8编码 一个汉字三个字节
+一个字节由8个位（二进制）组成
+js编码
+base64：开发中能替换路径，而且可以同于传输 是一个编码规范
+存在电脑内存中的都是二进制数据，再通过一些指定的编码规范如base64，将其转化为适合base64的规范的代码
+字符串（js）=》 asicc编码 =》6a 73 =》 存储 =》 buffer（通常位于计算机中的RAM中）
+
+高阶函数， 函数柯里化，反函数柯里化， 防抖（不停的调用只能执行一次），节流（有规律的执行） 类型判断（深拷贝）
+回调解决异步问题 （并发，串行）
+前端设计模式： 发布订阅（on emit off once） 观察者模式（被观察者，要放在观察身上）
+手写promise  高阶函数 发布订阅 一些回调的处理
+promise的finally、all、race  promise-limit（设置请求上线）
+generator + co原理 （异步递归的核心思想） =》 asyn + await
+promise如何终止 如何将node中的回调api转成promise的方式 promisfy；
+浏览器的事件环 同步异步 阻塞非阻塞 线程进程的关系，浏览器中哪些线程，线程如何调度的
+宏任务队列 微任务队列 + 浏览器渲染（requestIdleCallback）
+
+node
+全局对象 setImerdiate process（env,argv,cwd()）commander
+require dirname filename module.exports 如何实现的commonjs实现原理
+node EventLoop和浏览器事件环的区别 poll timer check
+npm模块的使用 内置 文件 第三方
+编码 怎么进行编码的转化 base64编码
+
+
+文件流 是文件操作中自己实现的流，文件流是继承于stream的，底层的实现用的是fs.read fs.open...
+
+
